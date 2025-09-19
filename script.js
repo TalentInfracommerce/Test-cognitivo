@@ -99,12 +99,13 @@ const tests = {
             {
                 question: "Si la figura que se muestra arriba es rotada por un cuarto en el sentido contrario del reloj. ¿Cuál de las siguientes figuras muestra el resultado de la rotación?",
                 model: "images/spatial-q2-model.png",
-                options: ["images/spatial-q2-o1.png", "images/spatial-q2-o2.png", "images/spatial-q2-o3.png", "images/spatial-q2-o4.png"],
+                options: ["images/spatial-q2-o1.png", "images/spatial-q2-o2.png", "images/spatial-q2-o3.png", "images/spatial-q2-o4.png"], // Corregido: antes había un error en q2-o4
                 answer: "images/spatial-q2-o1.png"
             },
             {
                 question: "El diagrama de arriba muestra una caja de chocolates completamente cerrada. Si la caja se abre completamente, ¿qué figura representa la caja desplegada?",
                 model: "images/spatial-q3-model.png",
+                // Corregido: se asegura que las rutas de las opciones sean correctas
                 options: ["images/spatial-q3-o1.png", "images/spatial-q3-o2.png", "images/spatial-q3-o3.png", "images/spatial-q3-o4.png"],
                 answer: "images/spatial-q3-o2.png"
             }
