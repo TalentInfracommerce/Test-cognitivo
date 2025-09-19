@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Aptitudes Cognitivas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="test-container">
+        <h1>Test de Aptitudes Cognitivas</h1>
+        <div id="section-title"></div>
+        <div id="timer">Tiempo restante: <span></span> segundos</div>
+
+        <div id="question-area">
+        </div>
+
+        <div id="options-area">
+        </div>
+
+        <div id="user-info" style="display:none; margin-bottom: 20px;">
+            <p>Por favor, ingresa tu nombre y apellido para comenzar el test.</p>
+            <input type="text" id="user-name" name="nombre_completo" placeholder="Nombre completo" required>
+        </div>
+
+        <button id="next-button">Siguiente pregunta</button>
+        
+        <div id="score-area">
+        </div>
+    </div>
+
+    <form id="contact-form" action="https://formspree.io/f/xeoldzpo" method="POST" style="display:none;">
+        <input type="email" name="_replyto" value="no-reply@test.com">
+        <textarea name="message" id="email-body"></textarea>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

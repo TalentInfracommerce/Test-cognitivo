@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.test-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    color: #333;
+}
+
+#timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#section-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#question-area {
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+.question-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.question-content p {
+    flex-basis: 100%;
+}
+
+.model-image {
+    max-width: 450px; /* Aumenta el tamaño máximo de la imagen */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+#options-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.option-button, .option-image {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+.option-image {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.option-button:hover, .option-image:hover {
+    border-color: #007bff;
+}
+
+.option-button.selected, .option-image.selected {
+    border-color: #007bff;
+    background-color: #eaf6ff;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .question-content {
+        flex-direction: column;
+    }
+    
+    .question-content p {
+        margin-right: 0;
+    }
+}
